@@ -5,6 +5,8 @@
 		<title>opendatahacklab - morning-after pill</title>
 		<link rel="stylesheet" type="text/css" href="http://opendatahacklab.github.io/odhl.css" />
 		<script type="text/javascript" src="http://opendatahacklab.github.io/sparql_suite/sparql_processor.js"></script>
+		<script type="text/javascript" src="http://opendatahacklab.github.io/sparql_suite/locn_sparql_processor.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>		
 </head>
 <body>
 	<header class="main-header">
@@ -21,7 +23,7 @@
 				<li>morning-after pill</li>
 			</ol>
 			<a href="https://github.com/opendatahacklab/morning-after-rebeldesse" alt="Source Code" title="GitHub repository"><img alt="GitHub" src="http://opendatahacklab.github.io/imgs/GitHub-Mark-64px.png" /></a>
-			<!-- a href="data.html"><img src="../imgs/rdf.png" /></a -->
+			<a href="#data"><img src="http://opendatahacklab.github.io/imgs/rdf.png" /></a>
 		</nav>
 	</header>
 	<section>
@@ -29,6 +31,29 @@
 		the morning-after pill in the city of Catania. These pharmacies has been <em>tested</em>
 		by the <em>Rebeldesse</em> group, which operates in the scope of <a href="http://www.officinarebelde.org/">Officina Rebelde</a>.
 		</p>
+		
+			<div id="map" class="map" />
+	
+			<script>
+	//Create Map
+	var canvas=document.getElementById("map");
+	var map=  new google.maps.Map(canvas, {
+		zoom: 11,
+		center: new google.maps.LatLng(37.450961, 15.051417)
+	});
+	
+	//create the processor instance
+	var processor = new GoogleMapsLOCNProcessor(null, null, map);
+		
+	//finally run the query
+	sparql_query("http://dydra.com/cristianolongo/morning-after-pill/sparql", processor);
+			</script> 
+	</section>
+	
+	<section>
+			<header><h2>Open Data</h2></header>
+			<p>The municipality of Catania provides a <a href="http://opendata.comune.catania.gov.it/dataset/test-geo">dataset
+			<em>Farmacie</em></a> which contains all pharmacies in the city.</p>	
 	</section>
 
 	<!-- TODO contributors -->	
