@@ -50,12 +50,13 @@
 	</earl:TestCase>
 	
 	<!--  tested pharmacies -->
+	
 	<earl:Assertion rdf:about="test1">
 		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
 		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/40" />
 		<earl:test rdf:resource="providing-morning-after-pills"/>
 	    <earl:result>
-	    	<earl:TestResult rdf:about="test1">
+	    	<earl:TestResult rdf:about="test1_result">
 	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
 	    	</earl:TestResult>
 	    </earl:result>	    
@@ -66,11 +67,225 @@
 		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/56" />
 		<earl:test rdf:resource="providing-morning-after-pills"/>
 	    <earl:result>
-	    	<earl:TestResult rdf:about="test2">
+	    	<earl:TestResult rdf:about="test2_result">
 	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
 	    	</earl:TestResult>
 	    </earl:result>	    
 	</earl:Assertion>
 	
+	<earl:Assertion rdf:about="test3">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/39" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test4_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test4">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/53" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test4_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test5">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/51" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test5_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test6">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/37" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test6_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test7">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/5" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test7_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test8">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/4" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test8_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+	
+	<earl:Assertion rdf:about="test9">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/20" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test9_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test10">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/25" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test10_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test11">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/32" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test11_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test12">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/98" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test12_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test13">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/34" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test13_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test14">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/22" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test14_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test15">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/21" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test15_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test16">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/52" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test16_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test17">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/50" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test17_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test18">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/45" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test18_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test19">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/13" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test19_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test20">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/43" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test20_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+<!--  	
+Farmacia Cutelli, Via Ventimiglia 2-4, NO Non risulta
+Farmacia Dusmet, Via Vittorio Emanuele 336, OK Non risulta
+Farmacia Alphega, Via Plebiscito 532, OK Non risulta
+Farmacia San Cristoforo, Via Plebiscito 328, OK probabilmente è al numero 329
+Farmacia, Viale Libertà 55, OK 35 - il civico è 57
+Farmacia Croceverde, Via D’annunzio 45, OK 26 - il civico è 43
+Farmacia Monserrato, Via D’annunzio 9, OK 94 - il civico è 1
+Farmacia Minerva, Via Etnea 387, OK Non risulta
+Farmacia Aquileia, Corso Italia, Ok Non risulta
+Farmacia Chines, Piazza San Domenico 32, Ok il civico riportato negli open data del comune è 28
+Farmacia Librino, Via Librino 15 (Librino), Ok non risulta. il sito è http://www.farmaciavialelibrino15.it/
+Farmacia Librino, Via Bummacaro 22 (Librino), Ok non risulta
+Farmacia Via Playa 115, Ok Non risulta
+Farmacia Giuffrida, Piazza carlo alberto, Ok non risulta, in piazza carlo alberto 18 c'e' BARTOLOTTA GIOVANNA 
+-->
 </rdf:RDF>
  
