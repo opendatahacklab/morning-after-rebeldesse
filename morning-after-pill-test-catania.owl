@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY org "http://www.w3.org/ns/org#" >
+]>
+
+<rdf:RDF xml:base="http://opendatahacklab.github.io/morning-after-pill-ontology/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dcterms="&dcterms;"
+	xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:lgdo="http://linkedgeodata.org/ontology/" 
+	xmlns:org="http://www.w3.org/ns/org#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+	xmlns:earl="http://www.w3.org/ns/earl#">
+	<owl:Ontology rdf:about="http://comune.catania.it/pharmacies/">
+		<rdfs:label>Pharmacies with Morning After Pills</rdfs:label>
+		<rdfs:comment>A list of Pharmacies which have been verified to sell
+			the morning-after pill.</rdfs:comment>
+		<owl:imports rdf:resource="http://www.w3.org/ns/org.rdf" />
+		<owl:imports rdf:resource="http://xmlns.com/foaf/spec/index.rdf" />
+	</owl:Ontology>
+
+	<!-- Test performer -->
+	<org:Organization rdf:about="http://www.officinarebelde.org/me">
+		<rdfs:label>Officina Rebelde</rdfs:label>
+		<foaf:name>Officina Rebelde</foaf:name>
+		<foaf:logo
+			rdf:resource="http://www.officinarebelde.org/local/cache-vignettes/L120xH115/arton16-fa99c.jpg" />
+		<foaf:homepage rdf:resource="http://www.officinarebelde.org/" />
+		<org:hasSubOrganization>
+			<org:Organization rdf:about="http://www.officinarebelde.org/rebeldesse">
+				<rdfs:label>Rebeldesse</rdfs:label>
+				<foaf:name>Rebeldesse</foaf:name>
+			</org:Organization>
+		</org:hasSubOrganization>
+	</org:Organization>
+
+
+	<!--  The test -->
+	<earl:TestCase rdf:about="providing-morning-after-pills">
+		<dcterms:title>Providing morning-after pills</dcterms:title>
+		<dcterms:description>The tested asked some pharmacy employee 
+		for a morning-after pill and the employee responded OK.</dcterms:description>
+	</earl:TestCase>
+	
+	<!--  tested pharmacies -->
+	<earl:Assertion rdf:about="test1">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/40" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test1">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+	
+	<earl:Assertion rdf:about="test2">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/56" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test2">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+	
+</rdf:RDF>
+ 
