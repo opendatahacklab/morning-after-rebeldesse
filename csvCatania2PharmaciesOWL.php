@@ -1,11 +1,27 @@
 <?php
 /**
+ * Copyright 2015 Cristiano Longo
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ * 
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *     
  * Convert the CSV file with the list of pharmacies released by the municipality of Catania into
  * an OWL file.
  *
  * The source csv file is read from standad input.
  *
  * @author Cristiano Longo
+ * @license http://www.gnu.org/licenses/lgpl-3.0.html
  */
  
 //constants indicating the meaning of csv columns
