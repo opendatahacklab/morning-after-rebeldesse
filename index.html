@@ -27,9 +27,15 @@
 		</nav>
 	</header>
 	<section>
-		<p>In this project we publish as open data a list of pharmacies which sell 
+		<p>In this project we publish as open data a non-exhaustive list of pharmacies which sell 
 		the morning-after pill in the city of Catania. These pharmacies has been <em>tested</em>
 		by the <em>Rebeldesse</em> group, which operates in the scope of <a href="http://www.officinarebelde.org/">Officina Rebelde</a>.
+		</p>
+		<p>
+		The <code>csvCatania2PharmaciesOWL.php</code> script has been used to produce an OWL ontology
+		of pharmacies in Catania starting from a dataset provieded and published by the municipality 
+		of Catania. In addition, an ontology describing the tests executed on some pharmacies is 
+		provided. Both these ontologies are used to produce the following map.
 		</p>
 		
 			<div id="map" class="map" />
@@ -52,16 +58,35 @@
 			</script> 
 	</section>
 	
-	<section>
+	<section id="data">
 			<header><h2>Open Data</h2></header>
 			<p>The municipality of Catania provides a <a href="http://opendata.comune.catania.gov.it/dataset/test-geo">dataset
-			<em>Farmacie</em></a> which contains all pharmacies in the city. Such a CSV file has been converted
-			in RDF via the <code>csvCatania2PharmaciesOWL.php</code> script with producing an OWL ontology
-			of pharmacies in Catania, modelled via the < a href="http://www.w3.org/ns/locn">LOCN vocabulary</a>.
-			Moreover, tests on pharmacies has been reported using the <a href="http://www.w3.org/TR/EARL10-Schema/">EARL</a> vocabulary.
+			<em>Farmacie</em></a> which contains all the pharmacies of the city. This dataset is released with
+			no licensing indications, so that it can be considered as released as Public Domain.</p>
 			
-			 
-			</p>	
+			<p>Such a CSV file, provided by the municipality of Catania, has been 
+			turned into an OWL ontology (in which the <a href="http://www.w3.org/ns/locn">LOCN vocabulary</a>
+			is used) by the <code>csvCatania2PharmaciesOWL.php</code> script (see the Git repository).
+			This script is released under the <a href="http://opensource.org/licenses/LGPL-3.0">LGPL 3.0</a>
+			license.</p>
+			
+			<p><code><a href="farmacie.owl">farmacie.owl</a></code></p>
+			
+			<p>Tests on pharmacies has been reported in a different ontology, linked with the
+			former, using the <a href="http://www.w3.org/TR/EARL10-Schema/">EARL</a> vocabulary.</p>
+			
+			<p><code><a href="morning-after-pill-test-catania.owl">morning-after-pill-test-catania.owl</a></code></p>
+			
+			<p>The <code>farmacie.owl</code> has been then enriched by using the reasoner
+			<a href="https://github.com/complexible/pellet">Pellet</a> (version 2.3.0). Such an enriched ontology, as well as 
+			the  <code>morning-after-pill-test-catania.owl</code> one, are provided together
+			via a sparql endpoint gracefully provided by <a href="dydra.com">Dydra</a>.</p>
+			
+			<p><a href="http://dydra.com/cristianolongo/morning-after-pill/sparql">SPARQL enpoint of the morning-after pills ontology</a></p> 
+			
+			<p>All of these ontologies, both as downloadable files or served via the sparql endpoint, 
+			are released under the <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> 
+			license.</p>
 	</section>
 
 	<!-- TODO contributors -->	
