@@ -319,14 +319,47 @@
 	    	</earl:TestResult>
 	    </earl:result>	    
 	</earl:Assertion>
+
+	<!-- Farmacia Dusmet, Via Vittorio Emanuele 336, OK 42 - il civico riportato dal comune è 248 -->
+	<earl:Assertion rdf:about="test24">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/42" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test24_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test25">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/6" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test25_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+
+	<!-- Farmacia Chines, Piazza San Domenico 32, Ok 47 il civico riportato negli open data del comune è 28 ma quelli reali sono 31,32 e 33 -->
+	<earl:Assertion rdf:about="test26">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/47" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test26_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
 	
 <!--  	
-Farmacia Dusmet, Via Vittorio Emanuele 336, OK Non risulta
 Farmacia Alphega, Via Plebiscito 532, OK Non risulta
-Farmacia San Cristoforo, Via Plebiscito 328, OK probabilmente è al numero 329
+Farmacia, Viale Libertà 55, OK 35 - il civico è 57
 Farmacia Minerva, Via Etnea 387, OK Non risulta ma esiste (383-387) ne risulta una al civico 400 nell'elenco del comune
 Farmacia Aquileia, Corso Italia, Ok Non risulta
-Farmacia Chines, Piazza San Domenico 32, Ok il civico riportato negli open data del comune è 28
 Farmacia Librino, Via Librino 15 (Librino), Ok non risulta. il sito è http://www.farmaciavialelibrino15.it/
 Farmacia Librino, Via Bummacaro 22 (Librino), Ok non risulta
 Farmacia Via Playa 115, Ok Non risulta
