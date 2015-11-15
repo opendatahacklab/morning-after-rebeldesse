@@ -367,9 +367,20 @@
 	    </earl:result>	    
 	</earl:Assertion>
 	
+	<!--  Farmacia Aquileia, Corso Italia -->
+	<earl:Assertion rdf:about="test28">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/97" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test28_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
+	
 <!--  	
 Farmacia Minerva, Via Etnea 387, OK Non risulta ma esiste (383-387) ne risulta una al civico 400 nell'elenco del comune
-Farmacia Aquileia, Corso Italia, Ok Non risulta
 Farmacia Librino, Via Librino 15 (Librino), Ok non risulta. il sito è http://www.farmaciavialelibrino15.it/
 Farmacia Librino, Via Bummacaro 22 (Librino), Ok non risulta
 Farmacia Via Playa 115, Ok Non risulta
