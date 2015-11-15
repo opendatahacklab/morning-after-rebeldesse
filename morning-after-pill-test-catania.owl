@@ -299,7 +299,7 @@
 	<!-- Farmacia Cutelli, Via Ventimiglia 2-4, NO 36 -->	
 <!-- 	<earl:Assertion rdf:about="test22"> -->
 <!-- 		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/> -->
-<!-- 		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/94" /> -->
+<!-- 		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/36" /> -->
 <!-- 		<earl:test rdf:resource="providing-morning-after-pills"/> -->
 <!-- 	    <earl:result> -->
 <!-- 	    	<earl:TestResult rdf:about="test22_result"> -->
@@ -311,7 +311,7 @@
 	<!-- Viale Liberta 57, OK 36 -->	
 	<earl:Assertion rdf:about="test23">
 		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
-		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/35" />
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/36" />
 		<earl:test rdf:resource="providing-morning-after-pills"/>
 	    <earl:result>
 	    	<earl:TestResult rdf:about="test23_result">
@@ -354,10 +354,20 @@
 	    	</earl:TestResult>
 	    </earl:result>	    
 	</earl:Assertion>
+
+	<!-- Farmacia Alphega, Via Plebiscito 534, OK 46 -->
+	<earl:Assertion rdf:about="test27">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/46" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test27_result">
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
 	
 <!--  	
-Farmacia Alphega, Via Plebiscito 532, OK Non risulta
-Farmacia, Viale Libertà 55, OK 35 - il civico è 57
 Farmacia Minerva, Via Etnea 387, OK Non risulta ma esiste (383-387) ne risulta una al civico 400 nell'elenco del comune
 Farmacia Aquileia, Corso Italia, Ok Non risulta
 Farmacia Librino, Via Librino 15 (Librino), Ok non risulta. il sito è http://www.farmaciavialelibrino15.it/
