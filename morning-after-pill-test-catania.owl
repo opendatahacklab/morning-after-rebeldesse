@@ -378,13 +378,24 @@
 	    	</earl:TestResult>
 	    </earl:result>	    
 	</earl:Assertion>
+
+	<earl:Assertion rdf:about="test29">
+		<earl:assertedBy rdf:resource="http://www.officinarebeldee.org/rebeldesse"/>
+		<earl:subject rdf:resource="http://comune.catania.it/pharmacies/70" />
+		<earl:test rdf:resource="providing-morning-after-pills"/>
+	    <earl:result>
+	    	<earl:TestResult rdf:about="test29_result">
+	    		<dcterms:date type="http://www.w3.org/2001/XMLSchema#date">2015-11-6</dcterms:date>
+	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
+	    	</earl:TestResult>
+	    </earl:result>	    
+	</earl:Assertion>
 	
 <!--  	
 Farmacia Minerva, Via Etnea 387, OK Non risulta ma esiste (383-387) ne risulta una al civico 400 nell'elenco del comune
 Farmacia Librino, Via Librino 15 (Librino), Ok non risulta. il sito è http://www.farmaciavialelibrino15.it/
 Farmacia Librino, Via Bummacaro 22 (Librino), Ok non risulta
 Farmacia Via Playa 115, Ok Non risulta
-Farmacia Giuffrida, Piazza carlo alberto, Ok non risulta, in piazza carlo alberto 18 c'e' BARTOLOTTA GIOVANNA 
 -->
 </rdf:RDF>
  
