@@ -385,7 +385,7 @@
 		<earl:test rdf:resource="providing-morning-after-pills"/>
 	    <earl:result>
 	    	<earl:TestResult rdf:about="test29_result">
-	    		<dcterms:date type="http://www.w3.org/2001/XMLSchema#date">2015-11-6</dcterms:date>
+	    		<dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-11-6</dcterms:date>
 	    		<earl:outcome rdf:resource="http://www.w3.org/ns/earl#passed"/>
 	    	</earl:TestResult>
 	    </earl:result>	    
