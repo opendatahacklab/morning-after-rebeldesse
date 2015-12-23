@@ -45,10 +45,39 @@
 
 
 	<!--  The test -->
-	<earl:TestCase rdf:about="providing-morning-after-pills">
+	<earl:TestRequirement rdf:about="providing-morning-after-pills">
 		<dcterms:title>Providing morning-after pills</dcterms:title>
-		<dcterms:description>The tested asked some pharmacy employee 
-		for a morning-after pill and the employee responded OK.</dcterms:description>
+		<dcterms:description>The morning-after pill can be bought in the 
+		tested pharmacy. The subtest specify in more details how the pill
+		is available in the pharmacy.</dcterms:description>
+		<dcterms:hasPart rdf:resource="just-for-adults" />
+		<dcterms:hasPart rdf:resource="medical-prescription-required-if-underage" />
+		<dcterms:hasPart rdf:resource="medical-prescription-required" />
+		<dcterms:hasPart rdf:resource="medical-prescription-required" />
+	</earl:TestRequirement>
+	
+	<earl:TestCase rdf:about="just-for-adults">
+		<dcterms:title>Providing morning-after pills only to adults</dcterms:title>
+		<dcterms:description>The morning-after pill can be bought in the 
+		tested pharmacy but only if you are an adult.</dcterms:description>
+	</earl:TestCase>
+
+	<earl:TestCase rdf:about="medical-prescription-required">
+		<dcterms:title>Providing morning-after pills only under medical-prescription</dcterms:title>
+		<dcterms:description>The morning-after pill can be bought in the 
+		tested pharmacy but only under medical prescription.</dcterms:description>
+	</earl:TestCase>
+
+	<earl:TestCase rdf:about="medical-prescription-required-if-underage">
+		<dcterms:title>Providing morning-after pills but under medical-prescription if underage</dcterms:title>
+		<dcterms:description>The morning-after pill can be bought in the 
+		tested pharmacy but, if you are underage, the medical prescription is required.</dcterms:description>
+	</earl:TestCase>
+
+	<earl:TestCase rdf:about="instantly-available">
+		<dcterms:title>Providing morning-after pills but under medical-prescription if underage</dcterms:title>
+		<dcterms:description>The morning-after pill can be bought in the 
+		tested pharmacy but, if you are underage, the medical prescription is required.</dcterms:description>
 	</earl:TestCase>
 	
 	<!--  tested pharmacies -->
@@ -392,11 +421,7 @@
 	    </earl:result>	    
 	</earl:Assertion>
 	
-<!--  	
-Farmacia Minerva, Via Etnea 387, OK Non risulta ma esiste (383-387) ne risulta una al civico 400 nell'elenco del comune
-Farmacia Librino, Via Librino 15 (Librino), Ok non risulta. il sito è http://www.farmaciavialelibrino15.it/
-Farmacia Librino, Via Bummacaro 22 (Librino), Ok non risulta
-Farmacia Via Playa 115, Ok Non risulta
--->
+	<!-- TESTER ONE -->
+	
 </rdf:RDF>
  
