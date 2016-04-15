@@ -3,90 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>opendatahacklab - morning-after pill</title>
-		<link rel="stylesheet" type="text/css" href="http://opendatahacklab.github.io/odhl.css" />
-		<script type="text/javascript" src="http://opendatahacklab.github.io/sparql_suite/sparql_processor.js"></script>
-		<script type="text/javascript" src="http://opendatahacklab.github.io/sparql_suite/locn_sparql_processor.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>		
 </head>
 <body>
-	<header class="main-header">
-		<img class="logo" src="http://opendatahacklab.github.io//imgs/logo_cog4_ter.png" alt="the opendatahacklab logo" />
-		<h1>opendatahacklab - morning-after pill</h1>
-		<p class="subtitle">THE OPEN DATA HACKING LABORATORY - Powered by 
-			<a href="http://github.com"><img alt="GitHub" src="http://opendatahacklab.github.io/imgs/GitHub_Logo.png" /></a>
-			<a href="http://dydra.com"><img alt="dydra.com" src="http://opendatahacklab.github.io/imgs/dydra-logo-24pt.png" /></a>
-		</p>
-		<nav>
-			<ol class="breadcrumb">
-				<li><a href="http://opendatahacklab.github.io/index.html">home</a></li>
-				<li><a href="http://opendatahacklab.github.io/projects.html">projects</a></li>
-				<li>morning-after pill</li>
-			</ol>
-			<a href="https://github.com/opendatahacklab/morning-after-rebeldesse" alt="Source Code" title="GitHub repository"><img alt="GitHub" src="http://opendatahacklab.github.io/imgs/GitHub-Mark-64px.png" /></a>
-			<a href="#data"><img src="http://opendatahacklab.github.io/imgs/rdf.png" /></a>
-		</nav>
-	</header>
-	<section>
-		<p>In this project we publish as open data a non-exhaustive list of pharmacies which sell 
-		the morning-after pill in the city of Catania. These pharmacies has been <em>tested</em>
-		by the <em>Rebeldesse</em> group, which operates in the scope of <a href="http://www.officinarebelde.org/">Officina Rebelde</a>.
-		</p>
-		<p>
-		The <code>csvCatania2PharmaciesOWL.php</code> script has been used to produce an OWL ontology
-		of pharmacies in Catania starting from a dataset provieded and published by the municipality 
-		of Catania. In addition, an ontology describing the tests executed on some pharmacies is 
-		provided. Both these ontologies are used to produce the following map.
-		</p>
-		
-			<div id="map" class="map" />
-	
-			<script>
-	//Create Map
-	var canvas=document.getElementById("map");
-	var map=  new google.maps.Map(canvas, {
-		zoom: 14,
-		center: new google.maps.LatLng(37.505061, 15.091417)
-	});
-	
-	//create the processor instance
-	
-	var processor = new GoogleMapsLOCNProcessor("?test earl:subject ?item. ?test earl:test testont:providing-morning-after-pills . ?test earl:result ?r . ?r earl:outcome earl:passed",
-	 "PREFIX earl:<http://www.w3.org/ns/earl#> \n PREFIX testont:<http://opendatahacklab.github.io/morning-after-pill-ontology/>", map);
-		
-	//finally run the query
-	sparql_query("http://dydra.com/cristianolongo/morning-after-pill/sparql", processor);
-			</script> 
-	</section>
-	
-	<section id="data">
-			<header><h2>Open Data</h2></header>
-			<p>The municipality of Catania provides a <a href="http://opendata.comune.catania.gov.it/dataset/test-geo">dataset
-			<em>Farmacie</em></a> which contains all the pharmacies of the city. This dataset is released with
-			no licensing indications, so that it can be considered as released as Public Domain.</p>
-			
-			<p>Such a CSV file, provided by the municipality of Catania, has been 
-			turned into an OWL ontology (in which the <a href="http://www.w3.org/ns/locn">LOCN vocabulary</a>
-			is used) by the <code>csvCatania2PharmaciesOWL.php</code> script (see the Git repository).
-			This script is released under the <a href="http://opensource.org/licenses/LGPL-3.0">LGPL 3.0</a>
-			license, whereas the produced ontology mantains the <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a> license of the origin dataset.</p>
-			
-			<p><code><a href="farmacie.owl">farmacie.owl</a></code></p>
-			
-			<p>Tests on pharmacies has been reported in a different ontology, linked with the
-			former, using the <a href="http://www.w3.org/TR/EARL10-Schema/">EARL</a> vocabulary.
-			This ontology is released under the <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
-			license.</p>
-			
-			<p><code><a href="morning-after-pill-test-catania.owl">morning-after-pill-test-catania.owl</a></code></p>
-			
-			<p>The <code>farmacie.owl</code> has been then enriched by using the reasoner
-			<a href="https://github.com/complexible/pellet">Pellet</a> (version 2.3.0). Such an enriched ontology, as well as 
-			the  <code>morning-after-pill-test-catania.owl</code> one, are provided together
-			via a sparql endpoint gracefully provided by <a href="dydra.com">Dydra</a>.</p>
-			
-			<p><a href="http://dydra.com/cristianolongo/morning-after-pill/sparql">SPARQL enpoint of the morning-after pills ontology</a></p> 			
-	</section>
-
-	<!-- TODO contributors -->	
+	<h1>opendatahacklab - morning-after pill</h1>
+	<p>This project has been moved to <a href="http://opendatahacklab.org">opendatahacklab-org</a>.</p>
 </body>
 </html>
